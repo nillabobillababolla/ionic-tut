@@ -14,7 +14,15 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+  },  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'leftbar',
+    loadChildren: () => import('./leftbar/leftbar.module').then( m => m.LeftbarPageModule)
   }
+
 ];
 
 @NgModule({
